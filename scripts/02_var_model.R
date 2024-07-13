@@ -12,8 +12,6 @@ var_model <- VAR(var_data, p = lag_selection$selection["AIC(n)"], type = "const"
 serial_test <- serial.test(var_model, lags.pt = 16, type = "PT.asymptotic")
 serial_test
 
-dir.create("results/irf_plots", showWarnings = FALSE, recursive = TRUE)
-
 # IRF save as pdf (it takes time... drink a coffee)
 variables <- colnames(var_data)
 for (impulse_var in variables) {
