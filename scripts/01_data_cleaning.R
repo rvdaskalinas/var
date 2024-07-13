@@ -10,7 +10,7 @@ data$date <- as.Date(data$date)
 data <- data %>%
   filter(date >= as.Date("2007-01-01") & date <= as.Date("2021-12-01"))
 
-# Log transformation expect interbank and exchange rates were we take the first difference
+# Log transformation except interbank and exchange rates where we take the first difference
 data <- data %>%
   mutate(log_dry_shale_production = log(dry_shale_production),
          log_shale_gas_withdrawals = log(shale_gas_withdrawals),
