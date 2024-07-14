@@ -25,7 +25,7 @@ This repository contains scripts that choose between using a VAR or a VECM model
 ### Step 1: Prepare Your Data
 
 1. Place your data file (e.g., `data.xlsx`) in the `data/` directory.
-2. Change the names of the columns at `02_data_cleaning.R` or find a better method of doing it automatically. I am not on this level yet. 
+2. Change the names of the columns at `02_data_cleaning.R` or find a better method of doing it automatically. I am not at this level yet. 
 
 ### Step 2: Run the Analysis
 
