@@ -1,6 +1,6 @@
 # VAR and VECM Models
 
-This repository contains scripts that choose between using a VAR or a VECM model based on the CI test and provides the irf and fevd plots.
+This repository contains scripts that run VECM, VAR or BVAR models based on the CI test. If cointegration is found it will run the VECM test, otherwise it will let you choose between BVAR and VAR. 
 
 ## Repository Structure
 
@@ -8,8 +8,9 @@ This repository contains scripts that choose between using a VAR or a VECM model
 - `02_data_cleaning.R`: Script for data cleaning and performing the Johansen cointegration test.
 - `03_var_model.R`: Script for fitting a VAR model if no cointegration is found.
 - `04_vecm_model.R`: Script for fitting a VECM model if cointegration is found.
+- `05_bvar_mode.R`: Script for fitting a BVAR model if no cointegration is found.
 - `data/`: Directory for input data files.
-- `results/`: Directory for output files including IRF and FEVD plots.
+- `results/`: Directory for output files including IRF and FEVD plots. (NOTE! For BVAR only the summary is printed. There is no FEVD plot.)
 
 ## Requirements
 
@@ -19,6 +20,7 @@ This repository contains scripts that choose between using a VAR or a VECM model
   - `urca`
   - `vars`
   - `ggplot2`
+  - `bvars`
 
 ## Instructions
 
