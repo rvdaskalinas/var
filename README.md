@@ -10,7 +10,7 @@ This repository contains scripts that run VECM, VAR or BVAR models based on the 
 - `04_vecm_model.R`: Script for fitting a VECM model if cointegration is found.
 - `05_bvar_mode.R`: Script for fitting a BVAR model if no cointegration is found.
 - `data/`: Directory for input data files.
-- `results/`: Directory for output files including IRF and FEVD plots. (NOTE! For BVAR only the summary is printed. There is no FEVD plot.)
+- `results/`: Directory for output files including IRF and FEVD plots. (NOTE! For BVAR only the IRF plots are extracted. There is no FEVD plot. Only the summary is printed.)
 
 ## Requirements
 
